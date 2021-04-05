@@ -1,10 +1,10 @@
 ### Exceptions and context managers contextmanager
 ***
-Create a context manager `cd` which changes the current directory to pointed one.
+Create a context manager `cd_context` which changes the current directory to pointed one.
 Use `contextmanager` decorator from `contextlib`
 For example:
 ```python
-with cd('/home')
+with cd_context('/home')
 ```
 When entering the context you need to save the previous directory and when you exit you need to restore it.
 During context manager initialization check that the passed directory is a directory and exists.

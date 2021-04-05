@@ -2,5 +2,5 @@ from contextlib import contextmanager
 
 
 @contextmanager
-def cd(path: str):
+def cd_context(path: str):
     pass
