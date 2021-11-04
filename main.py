@@ -8,7 +8,7 @@ def cd_context(path: str):
     current_dir = getcwd()
     try:
         chdir(path)
-        if os.path.isdir(path) or os.path.exists(path):
+        if not os.path.isdir(path) or not os.path.exists(path):
             raise ValueError
 
     finally:
